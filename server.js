@@ -64,7 +64,6 @@ app.post("/confirm-payment", async (req, res) => {
 
 // Order cancellation and refund endpoint
 app.post("/cancel-order", async (req, res) => {
-  console.log("Cancel order route hit:", req.body);
   try {
     const { paymentIntentId } = req.body;
 
